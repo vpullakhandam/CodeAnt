@@ -8,7 +8,7 @@ export function StatsCard() {
       {/* Background Image */}
       <img
         src={subtractImage}
-        className="absolute mt-80 -left-40 w-[250px] h-[250px] opacity-1"
+        className="absolute mt-60  ml-2 -left-40 w-[200px] h-[250px] opacity-1"
         alt="Background decoration"
       />
 
