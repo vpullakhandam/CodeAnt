@@ -20,7 +20,7 @@ export default function Auth() {
 
       {/* Right side with auth */}
       <div className="flex-1 flex flex-col items-center justify-center " style={{ backgroundColor: '#FAFAFA' }}>
-        <div className="w-full max-w-md space-y-8 rounded-lg bg-white p-6">
+        <div className="w-full max-w-md space-y-8 rounded-lg bg-white p-6 border">
           <Logo className="mx-auto" />
           
           <h1 className="text-3xl font-bold text-center">
