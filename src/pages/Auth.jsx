@@ -11,19 +11,18 @@ export default function Auth() {
   const [view, setView] = useState('saas')
 
   return (
-    <div className="min-h-screen flex" style={{ backgroundColor: '#FFFFFF' }} >
-      {/* Left side with stats */}
-      <div className="flex-1 p-8 flex items-center justify-center">
+    <div className="min-h-screen bg-gray-50 flex flex-col md:flex-row">
+      {/* Left side with stats - hidden on mobile */}
+      <div className="hidden md:flex md:flex-1 p-8 items-center justify-center">
         <StatsCard />
       </div>
-      
 
       {/* Right side with auth */}
-      <div className="flex-1 flex flex-col items-center justify-center " style={{ backgroundColor: '#FAFAFA' }}>
-        <div className="w-full max-w-md space-y-8 rounded-lg bg-white p-6 border">
+      <div className="flex-1 bg-white p-4 md:p-8 flex flex-col items-center justify-center">
+        <div className="w-full max-w-md space-y-6 md:space-y-8">
           <Logo className="mx-auto" />
           
-          <h1 className="text-3xl font-bold text-center">
+          <h1 className="text-2xl md:text-3xl font-bold text-center">
             Welcome to CodeAnt AI
           </h1>
           
@@ -32,7 +31,10 @@ export default function Auth() {
           {view === 'saas' ? <SaasAuth /> : <SelfHostedAuth />}
           
           <p className="text-center text-sm text-gray-600">
-            By signing up you agree to the <b> Privacy Policy</b>
+            By signing up you agree to the{' '}
+            <a href="/privacy-policy" className="text-blue-600 hover:underline">
+              Privacy Policy
+            </a>
             .
           </p>
         </div>

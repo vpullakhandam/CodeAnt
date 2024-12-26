@@ -19,7 +19,7 @@ export function StatsCard() {
       >
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-4">
-            <img src={logoImage} className="w-8 h-8" />
+            <img src={logoImage} alt ="" className="w-8 h-8" />
             <h2 className="text-xl font-medium">
               AI to Detect & Autofix Bad Code
             </h2>
