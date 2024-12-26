@@ -1,20 +1,10 @@
-export function Logo({ className = "" }) {
-    return (
-      <div className={`flex items-center gap-2 ${className}`}>
-        <svg
-          className="w-8 h-8"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-            fill="currentColor"
-          />
-        </svg>
-        <span className="text-xl font-medium">CodeAnt AI</span>
-      </div>
-    )
-  }
-  
-  
+import logoImage from "../../assets/logo.svg";
+
+export function Logo() {
+  return (
+    <div className={`flex items-center gap-2 ml-24 `}>
+      <img src={logoImage} alt="CodeAnt AI Logo" className="w-8 h-8" />
+      <span className="text-2xl font-medium">CodeAnt AI</span>
+    </div>
+  );
+}
