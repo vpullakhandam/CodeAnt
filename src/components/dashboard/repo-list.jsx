@@ -115,8 +115,8 @@ export function RepositoryList({ isMobileMenuOpen }) {
               </div>
               <div className="flex items-center gap-6 text-sm text-gray-600">
                 <div className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-blue-500" />
                   {repo.language}
+                  <span className="w-2.5 h-2.5 rounded-full bg-blue-500" />
                 </div>
                 <div className="flex items-center gap-1">
                   <span className="w-4 h-4">
